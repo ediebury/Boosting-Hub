@@ -28,8 +28,8 @@ class Signup extends StatelessWidget {
               const SizedBox(
                 height: 40,
               ),
-              const TextField(
-                decoration: InputDecoration(
+              TextFormField(
+                decoration: const InputDecoration(
                   hintText: 'Email',
                   prefixIcon: Icon(
                     Icons.email_outlined,
@@ -53,8 +53,8 @@ class Signup extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              const TextField(
-                decoration: InputDecoration(
+              TextFormField(
+                decoration: const InputDecoration(
                   hintText: 'Username',
                   prefixIcon: Icon(
                     Icons.person,
@@ -78,8 +78,8 @@ class Signup extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              const TextField(
-                decoration: InputDecoration(
+              TextFormField(
+                decoration: const InputDecoration(
                   hintText: 'Password',
                   prefixIcon: Icon(Icons.key),
                   suffixIcon: Icon(Icons.remove_red_eye_outlined),
@@ -113,6 +113,7 @@ class Signup extends StatelessWidget {
                   child: const Text(
                     'SIGNUP',
                     style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       fontSize: 20,
                       color: Colors.black,
                     ),

@@ -1,4 +1,6 @@
+import 'package:boosting_hub/screens/influencer_freelancer.dart';
 import 'package:boosting_hub/screens/login.dart';
+import 'package:boosting_hub/screens/login_signup.dart';
 import 'package:boosting_hub/signup.dart';
 import 'package:boosting_hub/onboarding.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Login(),
+      home: Influencer(),
     );
   }
 }
