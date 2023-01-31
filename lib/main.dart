@@ -1,3 +1,4 @@
+import 'package:boosting_hub/screens/homepage.dart';
 import 'package:boosting_hub/screens/login.dart';
 import 'package:boosting_hub/signup.dart';
 import 'package:boosting_hub/onboarding.dart';
@@ -8,7 +9,7 @@ void main() {
   runApp(
     DevicePreview(
       enabled: true,
-      builder: ((context) => MyApp()),
+      builder: ((context) => const MyApp()),
     ),
   );
 }
@@ -18,8 +19,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Login(),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
