@@ -41,6 +41,10 @@ class _InfluencerState extends State<Influencer> {
                       borderRadius: BorderRadius.circular(
                         10,
                       ),
+                      side: const BorderSide(
+                        color: Colors.black,
+                        width: 2,
+                      ),
                     ),
                   ),
                 ),
@@ -64,11 +68,16 @@ class _InfluencerState extends State<Influencer> {
               child: ElevatedButton(
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(
-                      Color.fromARGB(0, 255, 255, 255)),
+                    const Color.fromARGB(0, 0, 0, 0),
+                  ),
                   shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                         10,
+                      ),
+                      side: const BorderSide(
+                        color: Colors.black,
+                        width: 2,
                       ),
                     ),
                   ),

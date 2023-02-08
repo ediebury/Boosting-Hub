@@ -87,17 +87,8 @@ class _LoginState extends State<Login> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
-                  children: [
-                    Checkbox(
-                      value: showvalue,
-                      activeColor: const Color.fromARGB(255, 147, 149, 150),
-                      onChanged: (bool? newValue) {
-                        setState(() {
-                          showvalue = !showvalue;
-                        });
-                      },
-                    ),
-                    const Text(
+                  children: const [
+                    Text(
                       'Remember me.',
                       style:
                           TextStyle(fontSize: 12, fontWeight: FontWeight.w700),
@@ -117,9 +108,22 @@ class _LoginState extends State<Login> {
               height: 50,
               width: double.infinity,
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 202, 204, 205),
-                    side: const BorderSide(color: Colors.white)),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                    Colors.transparent,
+                  ),
+                  shape: MaterialStateProperty.all(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                        10,
+                      ),
+                      side: const BorderSide(
+                        color: Colors.black,
+                        width: 2,
+                      ),
+                    ),
+                  ),
+                ),
                 onPressed: () {},
                 child: const Text(
                   'LOGIN',
