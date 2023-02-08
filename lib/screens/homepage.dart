@@ -1,5 +1,9 @@
+import 'package:boosting_hub/pages/dashboard.dart';
 import 'package:boosting_hub/pages/drawer.dart';
+import 'package:boosting_hub/pages/promote.dart';
 import 'package:flutter/material.dart';
+
+import '../pages/analytics.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -42,6 +46,14 @@ class _HomePageState extends State<HomePage> {
               ]),
         ),
         drawer: const DrawerView(),
+        body: Column(
+          children: const [
+            Expanded(
+              child: TabBarView(
+                  children: [DashboardPage(), AnalyticsPage(), PromotePage()]),
+            ),
+          ],
+        ),
         bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             backgroundColor: const Color.fromARGB(255, 121, 126, 128),
