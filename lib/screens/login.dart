@@ -1,3 +1,4 @@
+import 'package:boosting_hub/screens/homepage.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
@@ -124,7 +125,13 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return const HomePage();
+                    },
+                  ));
+                },
                 child: const Text(
                   'LOGIN',
                   style: TextStyle(
