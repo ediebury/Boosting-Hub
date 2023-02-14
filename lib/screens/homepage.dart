@@ -57,15 +57,6 @@ class _HomePageState extends State<HomePage> {
               ]),
         ),
         drawer: const DrawerView(),
-        body: homeState
-            ? const Expanded(
-                child: TabBarView(children: [
-                  DashboardPage(),
-                  AnalyticsPage(),
-                  PromotePage(),
-                ]),
-              )
-            : Expanded(child: screens[currentSelectedIndex]["screens"]),
         bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             backgroundColor: const Color.fromARGB(255, 121, 126, 128),

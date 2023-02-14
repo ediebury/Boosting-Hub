@@ -77,24 +77,20 @@ class _DarkScreen_3State extends State<DarkScreen_3> {
                               ],
                             ),
                           ),
-                          Container(
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.rectangle,
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(50),
-                              ),
-                              color: Colors.white,
-                            ),
-                            child: Checkbox(
-                              value: showvalue,
-                              onChanged: (newValue) {
-                                setState(() {
-                                  showvalue = !showvalue;
-                                });
-                              },
-                              activeColor: Colors.black,
-                              checkColor: Colors.white,
-                            ),
+                          Checkbox(
+                            value: showvalue,
+                            onChanged: (newValue) {
+                              setState(() {
+                                showvalue = !showvalue;
+                              });
+                            },
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
+                            activeColor: Colors.black,
+                            fillColor: MaterialStateProperty.all(Colors.white),
+                            checkColor: Colors.black,
+                            side:
+                                const BorderSide(width: 2, color: Colors.white),
                           ),
                         ]),
                   ),
@@ -133,24 +129,20 @@ class _DarkScreen_3State extends State<DarkScreen_3> {
                               ],
                             ),
                           ),
-                          Container(
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.rectangle,
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(50),
-                              ),
-                              color: Colors.white,
-                            ),
-                            child: Checkbox(
-                              value: showvalue1,
-                              onChanged: (newValue) {
-                                setState(() {
-                                  showvalue1 = !showvalue1;
-                                });
-                              },
-                              activeColor: Colors.black,
-                              checkColor: Colors.white,
-                            ),
+                          Checkbox(
+                            value: showvalue1,
+                            onChanged: (newValue) {
+                              setState(() {
+                                showvalue1 = !showvalue1;
+                              });
+                            },
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
+                            activeColor: Colors.black,
+                            fillColor: MaterialStateProperty.all(Colors.white),
+                            checkColor: Colors.black,
+                            side:
+                                const BorderSide(width: 2, color: Colors.white),
                           ),
                         ]),
                   ),
@@ -184,24 +176,20 @@ class _DarkScreen_3State extends State<DarkScreen_3> {
                               ],
                             ),
                           ),
-                          Container(
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.rectangle,
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(50),
-                              ),
-                              color: Colors.white,
-                            ),
-                            child: Checkbox(
-                              value: showvalue2,
-                              onChanged: (newValue) {
-                                setState(() {
-                                  showvalue2 = !showvalue2;
-                                });
-                              },
-                              activeColor: Colors.black,
-                              checkColor: Colors.white,
-                            ),
+                          Checkbox(
+                            value: showvalue2,
+                            onChanged: (newValue) {
+                              setState(() {
+                                showvalue2 = !showvalue2;
+                              });
+                            },
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
+                            activeColor: Colors.black,
+                            fillColor: MaterialStateProperty.all(Colors.white),
+                            checkColor: Colors.black,
+                            side:
+                                const BorderSide(width: 2, color: Colors.white),
                           ),
                         ]),
                   ),
@@ -241,24 +229,20 @@ class _DarkScreen_3State extends State<DarkScreen_3> {
                               ],
                             ),
                           ),
-                          Container(
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.rectangle,
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(50),
-                              ),
-                              color: Colors.white,
-                            ),
-                            child: Checkbox(
-                              value: showvalue3,
-                              onChanged: (newValue) {
-                                setState(() {
-                                  showvalue3 = !showvalue3;
-                                });
-                              },
-                              activeColor: Colors.black,
-                              checkColor: Colors.white,
-                            ),
+                          Checkbox(
+                            value: showvalue3,
+                            onChanged: (newValue) {
+                              setState(() {
+                                showvalue3 = !showvalue3;
+                              });
+                            },
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
+                            activeColor: Colors.black,
+                            fillColor: MaterialStateProperty.all(Colors.white),
+                            checkColor: Colors.black,
+                            side:
+                                const BorderSide(width: 2, color: Colors.white),
                           ),
                         ]),
                   ),
@@ -305,24 +289,21 @@ class _DarkScreen_3State extends State<DarkScreen_3> {
                                     ),
                                   ),
                                 ),
-                                Container(
-                                  decoration: const BoxDecoration(
-                                    shape: BoxShape.rectangle,
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(50),
-                                    ),
-                                    color: Colors.white,
-                                  ),
-                                  child: Checkbox(
-                                    value: showvalue4,
-                                    onChanged: (newValue) {
-                                      setState(() {
-                                        showvalue4 = !showvalue4;
-                                      });
-                                    },
-                                    activeColor: Colors.black,
-                                    checkColor: Colors.white,
-                                  ),
+                                Checkbox(
+                                  value: showvalue4,
+                                  onChanged: (newValue) {
+                                    setState(() {
+                                      showvalue4 = !showvalue4;
+                                    });
+                                  },
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(10)),
+                                  activeColor: Colors.black,
+                                  fillColor:
+                                      MaterialStateProperty.all(Colors.white),
+                                  checkColor: Colors.black,
+                                  side: const BorderSide(
+                                      width: 2, color: Colors.white),
                                 ),
                               ],
                             ),
