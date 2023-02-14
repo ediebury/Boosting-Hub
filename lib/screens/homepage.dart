@@ -1,8 +1,5 @@
-import 'package:boosting_hub/pages/home.dart';
 import 'package:boosting_hub/pages/dashboard.dart';
 import 'package:boosting_hub/pages/drawer.dart';
-import 'package:boosting_hub/pages/monitize.dart';
-import 'package:boosting_hub/pages/profile.dart';
 import 'package:boosting_hub/pages/promote.dart';
 import 'package:boosting_hub/pages/settings.dart';
 import 'package:flutter/material.dart';
@@ -25,12 +22,11 @@ class _HomePageState extends State<HomePage> {
   }
 
   final List screens = [
-    {"screen": const HomeView()},
-    {"screen": const MonitizeView()},
-    {"screen": const ProfileView()},
+    {"screen": const DashboardPage()},
+    {"screen": const AnalyticsPage()},
+    {"screen": const PromotePage()},
     {"screen": const SettingsView()},
   ];
-  bool homeState = false;
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -44,19 +40,9 @@ class _HomePageState extends State<HomePage> {
               child: CircleAvatar(),
             )
           ],
-          bottom: const TabBar(
-              padding: EdgeInsets.all(5),
-              indicatorColor: Colors.white,
-              indicatorWeight: 1,
-              labelStyle: TextStyle(fontSize: 17),
-              unselectedLabelStyle: TextStyle(fontSize: 15),
-              tabs: [
-                Text("Analytics"),
-                Text("Dashboard"),
-                Text("Promote"),
-              ]),
         ),
         drawer: const DrawerView(),
+        body: screens[currentSelectedIndex]["screen"],
         bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             backgroundColor: const Color.fromARGB(255, 121, 126, 128),
@@ -67,9 +53,9 @@ class _HomePageState extends State<HomePage> {
             items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.attach_money), label: "Monitize"),
+                  icon: Icon(Icons.attach_money), label: "Analytics"),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.person), label: "Profile"),
+                  icon: Icon(Icons.person), label: "Promote"),
               BottomNavigationBarItem(
                   icon: Icon(Icons.settings), label: "Settings"),
             ]),
