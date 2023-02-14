@@ -1,5 +1,5 @@
-import 'package:boosting_hub/screens/homepage.dart';
 import 'package:boosting_hub/screens/login.dart';
+import 'package:boosting_hub/screens/login_signup.dart';
 import 'package:boosting_hub/signup.dart';
 import 'package:boosting_hub/onboarding.dart';
 import 'package:flutter/material.dart';
@@ -19,9 +19,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
+    return MaterialApp(
+      home: Login(),
     );
   }
 }

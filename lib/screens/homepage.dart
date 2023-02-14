@@ -1,6 +1,10 @@
+import 'package:boosting_hub/pages/home.dart';
 import 'package:boosting_hub/pages/dashboard.dart';
 import 'package:boosting_hub/pages/drawer.dart';
+import 'package:boosting_hub/pages/monitize.dart';
+import 'package:boosting_hub/pages/profile.dart';
 import 'package:boosting_hub/pages/promote.dart';
+import 'package:boosting_hub/pages/settings.dart';
 import 'package:flutter/material.dart';
 
 import '../pages/analytics.dart';
@@ -20,6 +24,13 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  final List screens = [
+    {"screen": const HomeView()},
+    {"screen": const MonitizeView()},
+    {"screen": const ProfileView()},
+    {"screen": const SettingsView()},
+  ];
+  bool homeState = false;
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -46,14 +57,15 @@ class _HomePageState extends State<HomePage> {
               ]),
         ),
         drawer: const DrawerView(),
-        body: Column(
-          children: const [
-            Expanded(
-              child: TabBarView(
-                  children: [DashboardPage(), AnalyticsPage(), PromotePage()]),
-            ),
-          ],
-        ),
+        body: homeState
+            ? const Expanded(
+                child: TabBarView(children: [
+                  DashboardPage(),
+                  AnalyticsPage(),
+                  PromotePage(),
+                ]),
+              )
+            : Expanded(child: screens[currentSelectedIndex]["screens"]),
         bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             backgroundColor: const Color.fromARGB(255, 121, 126, 128),
