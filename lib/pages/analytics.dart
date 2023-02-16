@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:boosting_hub/pages/drawer.dart';
 import 'package:boosting_hub/pages/dashboard.dart';
 import 'package:boosting_hub/pages/promote.dart';
@@ -46,6 +47,8 @@ final chart = LineChart(
     ],
   ),
 );
+=======
+>>>>>>> 462f849f2864b7f81e601452d0cbb73c30f87f6c
 
 class AnalyticsPage extends StatefulWidget {
   const AnalyticsPage({super.key});
@@ -55,15 +58,9 @@ class AnalyticsPage extends StatefulWidget {
 }
 
 class _AnalyticsPageState extends State<AnalyticsPage> {
-  int currentSelectedIndex = 0;
-  void screenSelected(int index) {
-    setState(() {
-      currentSelectedIndex = index;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return DefaultTabController(
         length: 3,
         child: Scaffold(
@@ -159,5 +156,8 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                     icon: Icon(Icons.settings), label: "Settings"),
               ]),
         ));
+=======
+    return Scaffold();
+>>>>>>> 462f849f2864b7f81e601452d0cbb73c30f87f6c
   }
 }

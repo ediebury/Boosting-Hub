@@ -14,7 +14,7 @@ void main() {
   runApp(
     DevicePreview(
       enabled: true,
-      builder: ((context) => MyApp()),
+      builder: ((context) => const MyApp()),
     ),
   );
 }
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AnalyticsPage(),
+      home: Login(),
     );
   }
 }
