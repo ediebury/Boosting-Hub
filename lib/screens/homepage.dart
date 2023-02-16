@@ -33,17 +33,6 @@ class _HomePageState extends State<HomePage> {
               child: CircleAvatar(),
             )
           ],
-          bottom: const TabBar(
-              padding: EdgeInsets.all(5),
-              indicatorColor: Colors.white,
-              indicatorWeight: 1,
-              labelStyle: TextStyle(fontSize: 17),
-              unselectedLabelStyle: TextStyle(fontSize: 15),
-              tabs: [
-                Text("Analytics"),
-                Text("Dashboard"),
-                Text("Promote"),
-              ]),
         ),
         drawer: const DrawerView(),
         body: Column(
