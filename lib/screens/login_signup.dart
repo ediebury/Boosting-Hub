@@ -1,3 +1,5 @@
+import 'package:boosting_hub/screens/login.dart';
+import 'package:boosting_hub/signup.dart';
 import 'package:flutter/material.dart';
 
 class SignUpAndLogin extends StatefulWidget {
@@ -44,7 +46,12 @@ class _SignUpAndLoginState extends State<SignUpAndLogin> {
                     ),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Signup()),
+                  );
+                },
                 child: const Text(
                   'SIGNUP',
                   style: TextStyle(
@@ -64,7 +71,7 @@ class _SignUpAndLoginState extends State<SignUpAndLogin> {
               child: ElevatedButton(
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(
-                      Color.fromARGB(0, 255, 255, 255)),
+                      const Color.fromARGB(0, 255, 255, 255)),
                   shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
@@ -73,7 +80,12 @@ class _SignUpAndLoginState extends State<SignUpAndLogin> {
                     ),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Login()),
+                  );
+                },
                 child: const Text(
                   'LOGIN',
                   style: TextStyle(
