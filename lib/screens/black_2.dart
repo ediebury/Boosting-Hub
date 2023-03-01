@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Dark_2 extends StatelessWidget {
   const Dark_2({super.key});
 

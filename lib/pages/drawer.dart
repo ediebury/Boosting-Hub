@@ -81,7 +81,7 @@ class _DrawerViewState extends State<DrawerView> {
                             backgroundColor:
                                 MaterialStateProperty.all(Colors.grey[800])),
                         onPressed: () {},
-                        child: Text("Log Out")))
+                        child: const Text("Log Out")))
               ],
             ),
           )

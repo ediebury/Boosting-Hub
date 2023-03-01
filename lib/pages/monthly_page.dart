@@ -10,6 +10,10 @@ class MonthlyPage extends StatefulWidget {
 class _MonthlyPageState extends State<MonthlyPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Row(
+        children: [],
+      ),
+    );
   }
 }

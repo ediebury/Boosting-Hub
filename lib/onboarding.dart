@@ -1,7 +1,30 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: library_private_types_in_public_api
 
-class Onboarding extends StatelessWidget {
+import 'package:boosting_hub/screens/login_signup.dart';
+import 'package:flutter/material.dart';
+import 'dart:async';
+
+class Onboarding extends StatefulWidget {
   const Onboarding({super.key});
+
+  @override
+  _OnboardingState createState() => _OnboardingState();
+}
+
+class _OnboardingState extends State<Onboarding> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(
+      const Duration(
+        seconds: 5,
+      ),
+      () => Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const SignUpAndLogin()),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {

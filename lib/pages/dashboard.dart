@@ -178,7 +178,7 @@ class _DashboardPageState extends State<DashboardPage>
                     Container(
                       padding: EdgeInsets.all(3),
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
+                          borderRadius: BorderRadius.circular(4),
                           border: Border.all(color: Colors.black)),
                       child: TabBar(
                           labelStyle: TextStyle(

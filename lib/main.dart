@@ -1,5 +1,3 @@
-import 'package:boosting_hub/pages/analytics.dart';
-import 'package:boosting_hub/pages/dashboard.dart';
 import 'package:boosting_hub/screens/black_1.dart';
 import 'package:boosting_hub/screens/black_2.dart';
 import 'package:boosting_hub/screens/black_3.dart';
@@ -26,9 +24,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: Onboarding(),
     );
   }
 }

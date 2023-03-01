@@ -11,7 +11,7 @@ class _WeeksPageState extends State<WeeksPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(5),
+      padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
           border: Border.all(color: Colors.black)),
@@ -21,12 +21,12 @@ class _WeeksPageState extends State<WeeksPage> {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
+              const Text(
                 "Subscribers",
                 style: TextStyle(fontSize: 17),
               ),
               Row(
-                children: [
+                children: const [
                   Text(
                     "12",
                     style: TextStyle(fontSize: 17),
@@ -38,7 +38,7 @@ class _WeeksPageState extends State<WeeksPage> {
                 ],
               ),
               Row(
-                children: [
+                children: const [
                   Text(
                     "New",
                     style: TextStyle(fontSize: 17),
@@ -53,7 +53,7 @@ class _WeeksPageState extends State<WeeksPage> {
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
+            children: const [
               Text(
                 "Views",
                 style: TextStyle(fontSize: 17),
@@ -70,7 +70,7 @@ class _WeeksPageState extends State<WeeksPage> {
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
+            children: const [
               Text(
                 "Charts",
                 style: TextStyle(fontSize: 17),

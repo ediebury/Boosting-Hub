@@ -10,6 +10,10 @@ class YearlyPage extends StatefulWidget {
 class _YearlyPageState extends State<YearlyPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [],
+      ),
+    );
   }
 }
