@@ -69,7 +69,8 @@ packages:
     dependency: transitive
     description:
       name: equatable
-      url: "https://pub.dartlang.org"
+      sha256: c2b87cb7756efdf69892005af546c56c0b5037f54d2a88269b4f347a505e3ca2
+      url: "https://pub.dev"
     source: hosted
     version: "2.0.5"
   fake_async:
@@ -100,7 +101,8 @@ packages:
     dependency: "direct main"
     description:
       name: fl_chart
-      url: "https://pub.dartlang.org"
+      sha256: "155556c4aba56c8474308d51b4e5446b80a07db9ab66a3cb74aff05c110df982"
+      url: "https://pub.dev"
     source: hosted
     version: "0.60.0"
   flutter:
@@ -335,18 +337,15 @@ packages:
       sha256: dd904f795d4b4f3b870833847c461801f6750a9fa8e61ea5ac53f9422b31f250
       url: "https://pub.dev"
     source: hosted
-<<<<<<< HEAD
-    version: "1.9.0"
+    version: "1.9.1"
   splashscreen:
     dependency: "direct main"
     description:
       name: splashscreen
-      url: "https://pub.dartlang.org"
+      sha256: "4c7c83f972d98eb8a9f22f896b016923d632056f2e1e323047130d3d2eecd159"
+      url: "https://pub.dev"
     source: hosted
     version: "1.3.5"
-
-    version: "1.9.1"
-462f849f2864b7f81e601452d0cbb73c30f87f6c
   stack_trace:
     dependency: transitive
     description:
@@ -412,5 +411,5 @@ packages:
     source: hosted
     version: "0.2.0+3"
 sdks:
-  dart: ">=2.18.2 <4.0.0"
+  dart: ">=2.18.2 <3.0.0"
   flutter: ">=3.0.0"

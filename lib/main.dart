@@ -1,6 +1,7 @@
 import 'package:boosting_hub/screens/black_1.dart';
 import 'package:boosting_hub/screens/black_2.dart';
 import 'package:boosting_hub/screens/black_3.dart';
+import 'package:boosting_hub/screens/homepage.dart';
 import 'package:boosting_hub/screens/influencer_freelancer.dart';
 import 'package:boosting_hub/screens/login.dart';
 import 'package:boosting_hub/screens/login_signup.dart';
