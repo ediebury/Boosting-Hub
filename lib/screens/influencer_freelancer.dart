@@ -1,3 +1,5 @@
+import 'package:boosting_hub/screens/login_signup.dart';
+import 'package:boosting_hub/signup.dart';
 import 'package:flutter/material.dart';
 
 class Influencer extends StatefulWidget {
@@ -48,7 +50,13 @@ class _InfluencerState extends State<Influencer> {
                     ),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SignUpAndLogin()),
+                  );
+                },
                 child: const Text(
                   'JOIN AS A CONTENT CREATOR',
                   style: TextStyle(
@@ -82,13 +90,19 @@ class _InfluencerState extends State<Influencer> {
                     ),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SignUpAndLogin()),
+                  );
+                },
                 child: const Text(
                   'JOIN AS A FREELANCER',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
-                    color: Colors.black,
+                    color: Color.fromARGB(255, 61, 59, 59),
                   ),
                 ),
               ),

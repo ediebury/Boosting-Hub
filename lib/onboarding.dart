@@ -1,5 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api
 
+import 'package:boosting_hub/screens/influencer_freelancer.dart';
 import 'package:boosting_hub/screens/login_signup.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
@@ -21,7 +22,7 @@ class _OnboardingState extends State<Onboarding> {
       ),
       () => Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const SignUpAndLogin()),
+        MaterialPageRoute(builder: (context) => const Influencer()),
       ),
     );
   }

@@ -97,7 +97,7 @@ class _DashboardPageState extends State<DashboardPage>
                     BoxShadow(
                         blurRadius: 5,
                         spreadRadius: -2,
-                        color: Colors.grey,
+                        color: Color.fromARGB(255, 121, 126, 128),
                         offset: Offset(0, 5))
                   ],
                   color: const Color.fromARGB(255, 121, 126, 128),
