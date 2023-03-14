@@ -37,7 +37,7 @@ class _DashboardPageState extends State<DashboardPage>
           children: [
             SizedBox(height: MediaQuery.of(context).size.height * 0.01),
             Container(
-              height: 180,
+              height: 190,
               width: double.infinity,
               decoration: BoxDecoration(
                   boxShadow: const [
@@ -90,7 +90,7 @@ class _DashboardPageState extends State<DashboardPage>
             ),
             SizedBox(height: MediaQuery.of(context).size.height * 0.015),
             Container(
-              height: 140,
+              height: 170,
               width: double.infinity,
               decoration: BoxDecoration(
                   boxShadow: const [
@@ -159,7 +159,7 @@ class _DashboardPageState extends State<DashboardPage>
             ),
             SizedBox(height: MediaQuery.of(context).size.height * 0.015),
             Container(
-              height: 170,
+              height: 200,
               width: double.infinity,
               decoration: BoxDecoration(
                   boxShadow: const [
@@ -226,6 +226,15 @@ class _DashboardPageState extends State<DashboardPage>
                   ],
                 ),
               ),
+            ),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+            ListTile(
+              onTap: () {},
+              tileColor: const Color.fromARGB(255, 121, 126, 128),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8)),
+              title: Text("Learn from competitors"),
+              trailing: Icon(Icons.add_circle_outline),
             )
           ],
         ),
