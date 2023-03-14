@@ -164,38 +164,37 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                 ),
               ),
               Container(
-                height: 300,
-                width: double.infinity,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: <Widget>[
-                    Container(
-                      width: 350.0,
-                      height: 200.0,
-                      color: Colors.transparent,
-                      child: chart,
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Container(
-                      width: 200.0,
-                      height: 200.0,
-                      color: Colors.transparent,
-                      child: chart1,
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Container(
-                      width: 200.0,
-                      height: 200.0,
-                      color: Colors.transparent,
-                      child: chart2,
-                    ),
-                  ],
-                ),
-              ),
+                  height: 300,
+                  width: double.infinity,
+                  child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      physics: const ScrollPhysics(),
+                      children: [
+                        Container(
+                          width: 350.0,
+                          height: 200.0,
+                          color: Colors.transparent,
+                          child: chart,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Container(
+                          width: 200.0,
+                          height: 200.0,
+                          color: Colors.transparent,
+                          child: chart1,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Container(
+                          width: 200.0,
+                          height: 200.0,
+                          color: Colors.transparent,
+                          child: chart2,
+                        ),
+                      ]))
             ]),
       ),
     );
