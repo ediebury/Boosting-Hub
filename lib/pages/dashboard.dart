@@ -142,10 +142,12 @@ class _DashboardPageState extends State<DashboardPage>
                       children: [
                         likesView(
                             numText: "20",
-                            icon: Icon(Icons.remove_red_eye_rounded)),
-                        likesView(numText: "20", icon: Icon(Icons.back_hand)),
+                            icon: const Icon(Icons.remove_red_eye_rounded)),
                         likesView(
-                            numText: "20", icon: Icon(Icons.comment_rounded)),
+                            numText: "20", icon: const Icon(Icons.back_hand)),
+                        likesView(
+                            numText: "20",
+                            icon: const Icon(Icons.comment_rounded)),
                       ],
                     )
                   ],
@@ -176,7 +178,7 @@ class _DashboardPageState extends State<DashboardPage>
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.all(3),
+                      padding: const EdgeInsets.all(3),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(4),
                           border: Border.all(color: Colors.black)),

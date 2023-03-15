@@ -12,7 +12,7 @@ class _MonthlyPageState extends State<MonthlyPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Row(
-        children: [],
+        children: const [],
       ),
     );
   }

@@ -1,3 +1,5 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:boosting_hub/pages/order.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +15,7 @@ class _PromotePageState extends State<PromotePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
             Container(

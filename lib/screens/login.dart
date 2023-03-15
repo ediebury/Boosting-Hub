@@ -1,3 +1,5 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:boosting_hub/screens/homepage.dart';
 import 'package:flutter/material.dart';
 

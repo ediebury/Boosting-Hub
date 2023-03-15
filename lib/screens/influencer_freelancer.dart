@@ -1,5 +1,6 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:boosting_hub/screens/login_signup.dart';
-import 'package:boosting_hub/signup.dart';
 import 'package:flutter/material.dart';
 
 class Influencer extends StatefulWidget {

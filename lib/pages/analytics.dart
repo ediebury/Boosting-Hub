@@ -1,5 +1,6 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:flutter/material.dart';
-import 'package:boosting_hub/pages/drawer.dart';
 
 import 'package:fl_chart/fl_chart.dart';
 

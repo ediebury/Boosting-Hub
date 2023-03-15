@@ -1,7 +1,6 @@
-// ignore_for_file: library_private_types_in_public_api
+// ignore_for_file: library_private_types_in_public_api, sized_box_for_whitespace
 
 import 'package:boosting_hub/screens/influencer_freelancer.dart';
-import 'package:boosting_hub/screens/login_signup.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
