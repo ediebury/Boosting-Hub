@@ -26,24 +26,26 @@ class _WeeksPageState extends State<WeeksPage> {
                 style: TextStyle(fontSize: 17),
               ),
               Row(
-                children: const [
-                  Text(
+                children: [
+                  const Text(
                     "12",
                     style: TextStyle(fontSize: 17),
                   ),
-                  Text(
+                  SizedBox(width: MediaQuery.of(context).size.height * 0.04),
+                  const Text(
                     "0",
                     style: TextStyle(fontSize: 17),
                   )
                 ],
               ),
               Row(
-                children: const [
-                  Text(
+                children: [
+                  const Text(
                     "New",
                     style: TextStyle(fontSize: 17),
                   ),
-                  Text(
+                  SizedBox(width: MediaQuery.of(context).size.height * 0.02),
+                  const Text(
                     "Lost",
                     style: TextStyle(fontSize: 17),
                   )
