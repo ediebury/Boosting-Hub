@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
     {"screen": const DashboardPage()},
     {"screen": const AnalyticsPage()},
     {"screen": const PromotePage()},
-    {"screen": const SettingsView()},
+    {"screen": const SettingsPage()},
   ];
   @override
   Widget build(BuildContext context) {

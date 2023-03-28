@@ -235,8 +235,8 @@ class _DashboardPageState extends State<DashboardPage>
               tileColor: const Color.fromARGB(255, 121, 126, 128),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8)),
-              title: Text("Learn from competitors"),
-              trailing: Icon(Icons.add_circle_outline),
+              title: const Text("Learn from competitors"),
+              trailing: const Icon(Icons.add_circle_outline),
             )
           ],
         ),

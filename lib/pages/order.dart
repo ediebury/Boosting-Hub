@@ -1,7 +1,5 @@
 // ignore_for_file: sized_box_for_whitespace, sort_child_properties_last, avoid_unnecessary_containers
 
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class OrderPage extends StatefulWidget {
@@ -11,7 +9,30 @@ class OrderPage extends StatefulWidget {
   State<OrderPage> createState() => _OrderPageState();
 }
 
-int? selected;
+final List<String> category = [
+  "Youtube",
+  "Twitter",
+];
+String? selected;
+final List<String> service = [
+  "likes",
+  "Followers or Subscribers",
+  "Page Engagement",
+  "Ad Clicks",
+  "Ad Views",
+  "Watch Hours",
+  "Comments"
+];
+String? selected1;
+final List<String> payment = [
+  "Visa",
+  "Mastercard",
+  "PayPal",
+  "Vodafone Cash",
+  "MTN Mobile Money",
+  "AirtelTigo Money",
+];
+String? selected2;
 
 class _OrderPageState extends State<OrderPage> {
   @override
@@ -34,6 +55,9 @@ class _OrderPageState extends State<OrderPage> {
               fontWeight: FontWeight.bold,
             ),
           ),
+          const SizedBox(
+            height: 10,
+          ),
           const Text(
             "Category",
             style: TextStyle(
@@ -43,17 +67,32 @@ class _OrderPageState extends State<OrderPage> {
           const SizedBox(
             height: 15,
           ),
-          DropdownButtonFormField(
-              hint: Text("Choose a category"),
-              items: [
-                DropdownMenuItem(child: Text("Youtube")),
-              ],
-              value: selected,
-              onChanged: (val) {
-                setState(() {
-                  selected = val;
-                });
-              }),
+          Container(
+            height: 75,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(
+                10,
+              ),
+            ),
+            child: DropdownButtonFormField(
+                hint: const Text("Choose a category"),
+                items: category
+                    .map((e) => DropdownMenuItem(
+                          child: Text(e),
+                          value: e,
+                        ))
+                    .toList(),
+                value: selected,
+                onChanged: (val) {
+                  setState(() {
+                    selected = val;
+                  });
+                }),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
           const Text(
             "Service",
             style: TextStyle(
@@ -66,14 +105,23 @@ class _OrderPageState extends State<OrderPage> {
           Container(
             height: 75,
             width: double.infinity,
-            child: ElevatedButton.icon(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.arrow_drop_down,
-                size: 30,
-              ),
-              label: const Text('Choose a Service'),
-            ),
+            child: DropdownButtonFormField(
+                hint: const Text("Choose a Service"),
+                items: service
+                    .map((e) => DropdownMenuItem(
+                          child: Text(e),
+                          value: e,
+                        ))
+                    .toList(),
+                value: selected1,
+                onChanged: (val) {
+                  setState(() {
+                    selected1 = val;
+                  });
+                }),
+          ),
+          const SizedBox(
+            height: 10,
           ),
           const Text(
             "Link",
@@ -102,6 +150,9 @@ class _OrderPageState extends State<OrderPage> {
                 ),
               ),
             ),
+          ),
+          const SizedBox(
+            height: 10,
           ),
           const Text(
             "Quantity",
@@ -136,28 +187,40 @@ class _OrderPageState extends State<OrderPage> {
           ),
           Container(
             height: 75,
-            width: double.infinity,
+            width: 200,
             child: TextFormField(
-              decoration:
-                  const InputDecoration(hintText: "Total Charge: \$20.00"),
+              decoration: const InputDecoration(
+                hintText: "Total Charge: \$20.00",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(10),
+                  ),
+                  borderSide: BorderSide(
+                    style: BorderStyle.solid,
+                    width: 10,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
             ),
           ),
           const SizedBox(
             height: 15,
           ),
-          Container(
-            height: 75,
-            width: double.infinity,
-            color: Colors.transparent,
-            child: ElevatedButton.icon(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.arrow_drop_down,
-                size: 24.0,
-              ),
-              label: const Text('Pay with any'),
-            ),
-          ),
+          DropdownButtonFormField(
+              hint: const Text("Pay With Any"),
+              items: payment
+                  .map((e) => DropdownMenuItem(
+                        child: Text(e),
+                        value: e,
+                      ))
+                  .toList(),
+              value: selected2,
+              onChanged: (val) {
+                setState(() {
+                  selected2 = val;
+                });
+              }),
         ],
       ),
     ));

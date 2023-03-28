@@ -1,5 +1,8 @@
 // ignore_for_file: camel_case_types
 
+import 'dart:async';
+
+import 'package:boosting_hub/screens/black_2.dart';
 import 'package:flutter/material.dart';
 
 class Dark_Screen_1 extends StatefulWidget {
@@ -13,6 +16,19 @@ class _Dark_Screen_1State extends State<Dark_Screen_1> {
   bool showvalue = false;
   bool showvalue1 = false;
   bool showvalue2 = false;
+  @override
+  void initState() {
+    super.initState();
+    Timer(
+      const Duration(
+        seconds: 5,
+      ),
+      () => Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const Dark_2()),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {

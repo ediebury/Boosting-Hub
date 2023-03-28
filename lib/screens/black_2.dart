@@ -1,9 +1,31 @@
+// ignore_for_file: camel_case_types
+
+import 'dart:async';
+
+import 'package:boosting_hub/screens/black_3.dart';
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
-class Dark_2 extends StatelessWidget {
+class Dark_2 extends StatefulWidget {
   const Dark_2({super.key});
 
+  @override
+  State<Dark_2> createState() => _Dark_2State();
+}
+
+class _Dark_2State extends State<Dark_2> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(
+      const Duration(
+        seconds: 5,
+      ),
+      () => Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const DarkScreen_3()),
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,6 +82,6 @@ class Dark_2 extends StatelessWidget {
           ),
         ),
       ]),
-    );
+    );;
   }
 }

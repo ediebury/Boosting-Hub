@@ -1,5 +1,6 @@
 // ignore_for_file: sized_box_for_whitespace
 
+import 'package:boosting_hub/screens/black_1.dart';
 import 'package:boosting_hub/screens/homepage.dart';
 import 'package:boosting_hub/screens/login.dart';
 import "package:flutter/material.dart";
@@ -125,7 +126,7 @@ class Signup extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const HomePage()),
+                    MaterialPageRoute(builder: (context) => const Dark_Screen_1()),
                   );
                 },
                 child: const Text(

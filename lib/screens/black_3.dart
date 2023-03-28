@@ -1,5 +1,8 @@
 // ignore_for_file: camel_case_types, sized_box_for_whitespace
 
+import 'dart:async';
+
+import 'package:boosting_hub/screens/homepage.dart';
 import 'package:flutter/material.dart';
 
 class DarkScreen_3 extends StatefulWidget {
@@ -14,8 +17,22 @@ bool showvalue1 = false;
 bool showvalue2 = false;
 bool showvalue3 = false;
 bool showvalue4 = false;
+ 
 
 class _DarkScreen_3State extends State<DarkScreen_3> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(
+      const Duration(
+        seconds: 5,
+      ),
+      () => Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
